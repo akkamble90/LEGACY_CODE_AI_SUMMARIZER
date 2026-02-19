@@ -13,8 +13,7 @@ Modernizing legacy systems is a major challenge in software engineering. This pr
 
 
 ## 🚀Live Demo
-You can check out the live application here:
-👉 **[Launch AI Legacy Code Summarizer] (https://legacycodeaisummarizer-a3exq3peobxiixdw9wkuuh.streamlit.app/)**
+You can check out the live application here: send message it needed **
 
 *(Note: If the app is in 'Sleep Mode', click 'Yes, get this app back up' to wake it.)*
 
