@@ -25,7 +25,7 @@ st.set_page_config(page_title=" Legacy Code Summarizer", layout="wide")
 try:
     aws_access_key = st.secrets["AWS_ACCESS_KEY_ID"]
     aws_secret_key = st.secrets["AWS_SECRET_ACCESS_KEY"]
-    aws_region = st.secrets.get("AWS_DEFAULT_REGION", "us-east-1")
+    aws_region = st.secrets.get("AWS_DEFAULT_REGION", "us-west-2")
 except Exception as e:
     st.error("Missing Secrets! Please add AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY to Streamlit settings.")
     st.stop()
@@ -43,7 +43,7 @@ def get_llm():
     # Using your specific EU Inference Profile/Model ID
     return ChatBedrock(
         client=client,
-        model_id="us.anthropic.claude-3-5-sonnet-20240620-v1:0",
+        model_id="openai.gpt-oss-20b-1:0",
         model_kwargs={"temperature": 0.0, "max_tokens": 4000}
     )
 
