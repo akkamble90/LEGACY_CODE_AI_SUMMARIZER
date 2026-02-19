@@ -43,7 +43,7 @@ def get_llm():
     # Using your specific EU Inference Profile/Model ID
     return ChatBedrock(
         client=client,
-        model_id="eu.anthropic.claude-3-5-sonnet-20240620-v1:0",
+        model_id="anthropic.claude-sonnet-4-6",
         model_kwargs={"temperature": 0.0, "max_tokens": 4000}
     )
 
